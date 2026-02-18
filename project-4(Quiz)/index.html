@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+<body class="back">
+    <!-- ===========================| POPUP |=========================== -->
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <h3>Quiz Start</h3>
+            <p>Are you ready to test your knowledge?
+                <br>Click on the <strong>Start Quiz</strong> button to begin 🚀</p>
+            <button id="startBtn">Start Quiz</button>
+        </div>
+    </div>
+    
+    <!-- ===========================| QUIZ |=========================== -->
+    <div id="quizBox">
+        <h2>Your Time Start Now <span id="time">01:00</span></h2>
+    
+        <div class="container">
+            <div class="qu"></div>
+            <div class="an row gx-5"></div>
+    
+            <button id="pre">Preview</button>
+            <button id="ne">Next</button>
+            <button id="submit" style="display:none;">Submit</button>
+    
+            <p id="score"></p>
+        </div>
+    </div>
+    <!-- ===========================| Result Popup |=========================== -->
+    <div class="popup" id="resultPopup" style="display:none;">
+        <div class="popup-box">
+            <h3>🎉 Quiz Completed</h3>
+            <p id="finalScore"></p>
+            <button btn class="btn" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    
+    <script src="program.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

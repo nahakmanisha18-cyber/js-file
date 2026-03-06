@@ -10,7 +10,7 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  background-image: url('image.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.319), rgba(0, 0, 0, 0.297)), url("image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,11 +45,12 @@ body{
   padding:12px;
   outline:none;
   background:transparent;
-  color:#fff;
+  color:#ffffff;
+  font-weight:500;
 }
 
 .search-box input::placeholder{
-  color:#e0e0e0;
+  color:#ffffff;
 }
 
 .search-box button{
@@ -87,4 +88,5 @@ body{
   background:rgba(255,255,255,0.2);
   border-radius:15px;
   padding:10px;
+
 }
